@@ -9,7 +9,7 @@ emoji
 feedparser
 future
 geopy
-python-markdown2
+markdown2
 #googletrans
 google_trans_new
 humanize
