@@ -171,8 +171,14 @@ else:
     except:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
-
-updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
+BOT_API_URL = "https://api.telegram.org/bot"  # DON'T EDIT
+updater = tg.Updater(
+    token=TOKEN,
+    base_url=BOT_API_URL,
+    workers=min(32, os.cpu_count() + 4),
+    request_kwargs={"read_timeout": 10, "connect_timeout": 10},
+    use_context=True,
+)
 telethn = TelegramClient("saitama", API_ID, API_HASH)
 dispatcher = updater.dispatcher
 
