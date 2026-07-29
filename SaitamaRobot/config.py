@@ -18,7 +18,7 @@ class Config(object):
     ALLOW_CHATS = True
     API_ID = "2568615"  # integer value, dont use ""
     API_HASH = "1e62cca9207a4469ca847526acebb660"
-    TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    TOKEN = "6561884620:AAFfGKNHPgANLsTWs15XDvRBxVYfccAQOos"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 8980101371  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "Sawada"
     SUPPORT_CHAT = "OnePunchSupport"
