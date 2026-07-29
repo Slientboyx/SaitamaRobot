@@ -411,7 +411,7 @@ def gbanlist(update: Update, context: CallbackContext):
             filename="gbanlist.txt",
             caption="Here is the list of currently gbanned users.",
         )
-
+"""
 
 def check_and_ban(update, user_id, should_message=True):
 
@@ -422,8 +422,8 @@ def check_and_ban(update, user_id, should_message=True):
             sw_ban = sw.get_ban(int(user_id))
         except:
             sw_ban = None
-
-    if sw_ban:
+            
+ if sw_ban:
         update.effective_chat.kick_member(user_id)
         if should_message:
             update.effective_message.reply_text(
@@ -435,7 +435,7 @@ def check_and_ban(update, user_id, should_message=True):
                 parse_mode=ParseMode.HTML,
             )
         return
-
+"""
     if sql.is_user_gbanned(user_id):
         update.effective_chat.kick_member(user_id)
         if should_message:
