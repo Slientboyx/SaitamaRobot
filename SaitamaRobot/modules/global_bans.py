@@ -27,7 +27,7 @@ from SaitamaRobot import (
     DEMONS,
     TIGERS,
     WOLVES,
-    sw,
+    #sw,
     dispatcher,
 )
 from SaitamaRobot.modules.helper_funcs.chat_status import (
@@ -412,7 +412,7 @@ def gbanlist(update: Update, context: CallbackContext):
             caption="Here is the list of currently gbanned users.",
         )
 
-
+"""
 def check_and_ban(update, user_id, should_message=True):
 
     if user_id in TIGERS or user_id in WOLVES:
@@ -449,7 +449,7 @@ def check_and_ban(update, user_id, should_message=True):
             if user.reason:
                 text += f"\n<b>Ban Reason:</b> <code>{html.escape(user.reason)}</code>"
             update.effective_message.reply_text(text, parse_mode=ParseMode.HTML)
-
+"""
 
 @run_async
 def enforce_gban(update: Update, context: CallbackContext):
