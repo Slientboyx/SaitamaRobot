@@ -31,7 +31,7 @@ class Config(object):
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "postgresql://happykira4501@gmail.com:Papajee1-1@saitamadb.postgres.database.azure.com:5432/postgres"
+    SQLALCHEMY_DATABASE_URI = "postgresql://happykira4501@gmail.com:papajee1-1@saitamadb.postgres.database.azure.com:5432/postgres"
     # needed for any database modules # its "URI" and not "URL" as hrok and similar ones only accept it as such
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
