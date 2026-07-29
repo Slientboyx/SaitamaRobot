@@ -31,7 +31,7 @@ class Config(object):
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "psycopg2.connect(user="happykira4501@gmail.com", password="papajee1-1", host="saitamadb.postgres.database.azure.com", port=5432, database="postgres"  # needed for any database modules # its "URI" and not "URL" as herok and similar ones only accept it as such
+    SQLALCHEMY_DATABASE_URI = "psycopg2.connect (user="happykira4501@gmail.com", password="papajee1-1", host="saitamadb.postgres.database.azure.com", port=5432, database="postgres)"  # needed for any database modules # its "URI" and not "URL" as herok and similar ones only accept it as such
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
