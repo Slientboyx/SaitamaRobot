@@ -1,3 +1,6 @@
+
+
+
 import logging
 import os
 import sys
@@ -28,7 +31,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
 ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
-    TOKEN = os.environ.get("TOKEN", None)
+    TOKEN = "6561884620:AAFfGKNHPgANLsTWs15XDvRBxVYfccAQOos"
 
     try:
         OWNER_ID = int(os.environ.get("OWNER_ID", None))
