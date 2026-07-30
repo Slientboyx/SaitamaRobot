@@ -20,7 +20,7 @@ nltk
 Pillow>=4.2.0
 pretty_errors
 psutil
-psycopg2-binary
+psycopg2-binary==2.9.10
 pynewtonmath
 pyrate-limiter
 python-telegram-bot==13.15
